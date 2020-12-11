@@ -103,6 +103,7 @@ while not done:
                         todos.remove(todos[num - 1])
                     else:
                         print(f"There is no To-Do with the index {num} in your To-Do list.")
+                        
                 except:
                     if todo in todos:
                         todos.remove(todo)
@@ -124,6 +125,7 @@ while not done:
                         todosDone.append(toChange)
                     else:
                         print(f"There is no To-Do with the index {num} in your To-Do list.")
+                        
                 except:
                     if todo in todos:
                         todos.remove(todo)
