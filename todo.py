@@ -9,7 +9,7 @@ todos = []
 todosDone = []
 
 def prepareFile():
-    # Prepare file to store data if no file has been generated yet
+    # Prepare file to store data if there is no file "todo.json" yet
     with open(filename, "w") as f:
         json.dump(
             {
@@ -31,7 +31,7 @@ if os.path.exists(filename):
     except:
         prepareFile()
         print()
-        print(f"WARNING: The file '{filename}' has been reset because it was corrupted or modified.")
+        print(f"WARNING: The file '{filename}' has been reset because it was corrupted or incorrectly modified.")
 else:
     prepareFile()
 
